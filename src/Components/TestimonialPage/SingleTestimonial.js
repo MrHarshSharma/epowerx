@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 const Testimonial = ({ children }) => {
-  return <Box>{children}</Box>;
+  return <Box className="testBox">{children}</Box>;
 };
 
 const TestimonialContent = ({ children }) => {
@@ -68,7 +68,7 @@ const TestimonialText = ({ children }) => {
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={src} alt={name} mb={2} />
+      <Avatar src={`https://lh3.googleusercontent.com/d/${src}`} alt={name} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text
           fontWeight={600}

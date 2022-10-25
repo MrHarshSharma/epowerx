@@ -71,6 +71,7 @@ function SinglePeople({ member }) {
         color='white'
         px={1}
         py={2}
+        mb={2}
       >
         {member.description}
       </Text>
@@ -93,7 +94,7 @@ function SinglePeople({ member }) {
             Email
           </Button>
         </Link>
-        <Link
+        {/* <Link
           href={"#Contact"}
           flex={1}
           fontSize={"sm"}
@@ -103,7 +104,7 @@ function SinglePeople({ member }) {
           <Button className="btn_yellow" color={"black"}>
             Call
           </Button>
-        </Link>
+        </Link> */}
       </Stack>
     </Box>
   );

@@ -16,6 +16,7 @@ import {
     IoBulb,
     IoBuild,
     IoCog,
+    IoTv
   } from 'react-icons/io5';
 import TitleComponent from './TitleComponent';
  
@@ -85,6 +86,13 @@ function ServicesSection() {
               }
               iconBg={useColorModeValue('purple.100', 'purple.900')}
               text={'Deployment'}
+            />
+             <Feature
+              icon={
+                <Icon as={IoTv} color={'red.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('red.100', 'red.900')}
+              text={'Monitoring'}
             />
           </Stack>
         </Stack>

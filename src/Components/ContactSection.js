@@ -95,41 +95,71 @@ function ContactSection() {
                     Fill up the form in right to contact us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={0} spacing={3} alignItems="flex-start">
+                    <VStack pl={0} spacing={0} alignItems="flex-start" className="contactBtns">
                       <Button
                         size="md"
-                        height="48px"
-                        width="200px"
+                        height="25px"
+                        width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none" }}
+                        _hover={{ border: "none", cursor:'text' }}
+                        _active={{ border: "none" }}
                         leftIcon={<MdPhone size="20px" />}
                       >
                         +91-9582206907
                       </Button>
                       <Button
                         size="md"
-                        height="48px"
-                        width="200px"
+                        height="25px"
+                        width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none" }}
+                        _hover={{ border: "none", cursor:'text' }}
+                        _active={{ border: "none" }}
+                        leftIcon={<MdPhone size="20px" />}
+                      >
+                        +91-8494954808
+                      </Button>
+                      <Button
+                        size="md"
+                        height="25px"
+                        width="250px"
+                        variant="ghost"
+                        className="contanctFormLeftBtns"
+                        _hover={{ border: "none", cursor:'text' }}
+                        _active={{ border: "none" }}
                         leftIcon={<MdEmail size="20px" />}
+                        style={{marginTop:'20px'}}
                       >
                         abhijeet@epowerx.ai
                       </Button>
                       <Button
                         size="md"
+                        height="25px"
+                        width="250px"
+                        variant="ghost"
+                        className="contanctFormLeftBtns"
+                        _hover={{ border: "none", cursor:'text' }}
+                        _active={{ border: "none" }}
+                        leftIcon={<MdEmail size="20px" />}
+                      >
+                        pratik@epowerx.ai
+                      </Button>
+                      <Button
+                        size="md"
                         height="48px"
-                        width="200px"
+                        width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns address"
-                        _hover={{ border: "none" }}
+                        _hover={{ border: "none", cursor:'text' }}
+                        _active={{ border: "none" }}
                         leftIcon={<MdLocationOn size="20px" />}
+                        style={{marginTop:'20px'}}
                       >
                         39, 2nd Floor, Suite #215,<br /> NGEF Lane, Indiranagar,<br /> First Stage, Bengaluru,<br /> Karnataka - 560038, India
                       </Button>
                     </VStack>
+
                   </Box>
                  
                 </Box>

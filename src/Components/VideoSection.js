@@ -9,7 +9,11 @@ import {
  
 } from "@chakra-ui/react";
 import invoice from "../videos/invoice.mp4";
+import invoicePoster from "../Images/Thumbnail/invoice.png"
+
 import maskAi from "../videos/MaskAI.mp4";
+import maskAiPoster from '../Images/Thumbnail/maskAI.png'
+
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import TitleComponent from "./TitleComponent";
 function VideoSection() {
@@ -39,49 +43,26 @@ function VideoSection() {
                 <li data-target="#VideoCourasal" data-slide-to="1"  className=" roundedBtn">
                   <span>Mask: This a description line that is added here</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="2"  className=" roundedBtn">
-                  <span>Mask 1: This a description line that is added here</span>
-                </li>
-                <li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
-                  <span>Mask again: This a description line that is added here</span>
-                </li><li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
-                  <span>Mask again: This a description line that is added here</span>
-                </li><li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
-                  <span>Mask again: This a description line that is added here</span>
-                </li>
-                
+                      
               </ol>
             </Stack>
             <Stack flex={2} spacing={{ base: 5, md: 10 }} className="Player">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div className="VideoContainer">
-                    <video controls>
+                    <video controls poster={invoicePoster}>
                       <source src={invoice}></source>
                     </video>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div className="VideoContainer">
-                    <video controls>
+                    <video controls poster={maskAiPoster}>
                       <source src={maskAi}></source>
                     </video>
                   </div>
                 </div>
-                <div class="carousel-item ">
-                  <div className="VideoContainer">
-                    <video controls>
-                      <source src={invoice}></source>
-                    </video>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div className="VideoContainer">
-                    <video controls>
-                      <source src={maskAi}></source>
-                    </video>
-                  </div>
-                </div>
+               
               </div>
               <a
                 class="carousel-control-prev"

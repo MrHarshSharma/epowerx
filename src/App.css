@@ -127,6 +127,7 @@ a:hover {
 
 .contanctFormLeftBtns {
   /* width: 100% !important; */
+  justify-content: flex-start !important;
 }
 
 .LinkedIncontainer{
@@ -144,9 +145,26 @@ a:hover {
   padding: 3px;
   border-radius: 5px;
 }
-.iterateImage, .testi_content{
+.iterateImage {
   box-shadow: var(--btn-shadow);
 }
+
+.testi_content{
+  box-shadow: var(--btn-shadow);
+  flex: 1;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+
+.testBox{
+
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
 .LinkedIncontainer:hover  p {
   transform: scale(1.04);
   background-color: var(--bg--light);
@@ -430,3 +448,4 @@ a:hover {
 li.roundedBtn{
   padding: 2px 30px !important;
 }
+

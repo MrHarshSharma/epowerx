@@ -27,13 +27,11 @@ async function fetData () {
       name: data[0], 
       designation: data[1],
       feedback: data[2],
-      avatarSrc:
-            "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
+      avatarSrc:data[3],
     }
   )).filter((x,i)=>i>0);
 
   setTestimonialList(objs)
-  console.log(objs)
 }
 
 fetData();
@@ -88,7 +86,7 @@ fetData();
                     return (
                       <>
                       {i==0?(
-                         <div key={i} class="carousel-item col-md-4">
+                         <div key={i} class="active carousel-item col-md-4">
                          <SingleTestimonial  data={item} />
                        </div>
                       ):(
