@@ -31,21 +31,22 @@ function VideoSection() {
                 <li
                   data-target="#VideoCourasal"
                   data-slide-to="0"
-                  className="active"
+                  className="active roundedBtn"
+                 
                 >
                   <span>Invoice: This a description line that is added here</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="1">
+                <li data-target="#VideoCourasal" data-slide-to="1"  className=" roundedBtn">
                   <span>Mask: This a description line that is added here</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="2">
+                <li data-target="#VideoCourasal" data-slide-to="2"  className=" roundedBtn">
                   <span>Mask 1: This a description line that is added here</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="3">
+                <li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
                   <span>Mask again: This a description line that is added here</span>
-                </li><li data-target="#VideoCourasal" data-slide-to="3">
+                </li><li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
                   <span>Mask again: This a description line that is added here</span>
-                </li><li data-target="#VideoCourasal" data-slide-to="3">
+                </li><li data-target="#VideoCourasal" data-slide-to="3"  className=" roundedBtn">
                   <span>Mask again: This a description line that is added here</span>
                 </li>
                 

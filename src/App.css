@@ -417,3 +417,16 @@ a:hover {
   font-weight: 900 !important;
   z-index: 2;
 }
+
+
+.gradientBG{
+  background-image: linear-gradient(to bottom, #ccc5d7, #7a57b3) !important;
+}
+
+.roundedBtn{
+  border-radius:100px !important;
+}
+
+li.roundedBtn{
+  padding: 2px 30px !important;
+}

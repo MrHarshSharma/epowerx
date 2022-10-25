@@ -15,11 +15,13 @@ function SinglePeople({ member }) {
     <Box
       maxW={"620px"}
       w={"full"}
-      bg={useColorModeValue("white", "gray.900")}
+      // bg={useColorModeValue("white", "gray.900")}
+      className='gradientBG'
       rounded={"lg"}
       p={6}
       textAlign={"center"}
       style={{ boxShadow: "0 25px 50px -12px rgb(0 0 0 / 46%)" }}
+      
     >
       <Avatar
         size={"xl"}
@@ -58,7 +60,7 @@ function SinglePeople({ member }) {
       >
         <span className="LinkedIncontainer">
 
-        <Text fontWeight={600} className="light_color" mb={4}>
+        <Text fontWeight={600} style={{color:'white'}} mb={4}>
           <AiFillLinkedin />
           {member.linkedin}
         </Text>
@@ -66,7 +68,7 @@ function SinglePeople({ member }) {
       </a>
       <Text
         textAlign={"center"}
-        color={useColorModeValue("gray.700", "gray.400")}
+        color='white'
         px={1}
         py={2}
       >

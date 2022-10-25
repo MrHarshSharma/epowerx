@@ -28,7 +28,8 @@ function BasketCaseStudy() {
         <Box
           maxW={"330px"}
           w={"full"}
-          bg={useColorModeValue("white", "gray.800")}
+          // bg={useColorModeValue("white", "gray.800")}
+          className='gradientBG'
           boxShadow={"base"}
           rounded={"md"}
           overflow={"hidden"}
@@ -59,14 +60,15 @@ function BasketCaseStudy() {
           </Stack>
 
           <Box
-            bg={useColorModeValue("gray.200", "gray.900")}
+            // bg={useColorModeValue("gray.200", "gray.900")}
+            style={{color:'white'}}
             px={6}
             py={10}
             className="caseStudyContent"
           >
             <List spacing={3}>
               <ListItem>
-                <ListIcon as={CheckIcon} color="green.400" />
+                <ListIcon as={CheckIcon} color="white.400" />
                 Predicts time and products in the next basket of user of a
                 retail chain.
               </ListItem>
@@ -74,11 +76,10 @@ function BasketCaseStudy() {
 
             <Button
               onClick={onOpen}
-              className="btn_yellow"
+              className="btn_yellow roundedBtn"
               mt={10}
               w={"full"}
               color={"black"}
-              rounded={"xl"}
               boxShadow={"0 5px 20px 0px rgb(217 203 34 / 43%)"}
             >
               Read More
@@ -86,8 +87,8 @@ function BasketCaseStudy() {
 
             <Modal onClose={onClose} isOpen={isOpen} size={"full"}>
               <ModalOverlay />
-              <ModalContent>
-                <ModalHeader>Next basket recomendations </ModalHeader>
+              <ModalContent className="gradientBG">
+                <ModalHeader fontSize='3xl'>Next basket recomendations </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
                   <img src={basket} />

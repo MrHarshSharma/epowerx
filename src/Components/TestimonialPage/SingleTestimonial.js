@@ -8,6 +8,7 @@ import {
   Avatar,
   useColorModeValue,
 } from "@chakra-ui/react";
+
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
 };
@@ -43,13 +44,13 @@ const TestimonialContent = ({ children }) => {
   );
 };
 
-const TestimonialHeading = ({ children }) => {
-  return (
-    <Heading as={"h3"} fontSize={"xl"}>
-      {children}
-    </Heading>
-  );
-};
+// const TestimonialHeading = ({ children }) => {
+//   return (
+//     <Heading as={"h3"} fontSize={"xl"} kwy={children}>
+//       {children}
+//     </Heading>
+//   );
+// };
 
 const TestimonialText = ({ children }) => {
   return (
@@ -57,6 +58,7 @@ const TestimonialText = ({ children }) => {
       textAlign={"center"}
       color={useColorModeValue("gray.100", "gray.400")}
       fontSize={"sm"}
+      key={`${children}text`}
     >
       {children}
     </Text>
@@ -86,13 +88,12 @@ const SingleTestimonial = ({ data }) => {
     <>
       <Testimonial >
         <TestimonialContent >
-          <TestimonialHeading>{data.heading}</TestimonialHeading>
-          <TestimonialText>{data.text}</TestimonialText>
+          <TestimonialText>{data.feedback}</TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
           src={data.avatarSrc}
           name={data.name}
-          title={data.title}
+          title={data.designation}
         />
       </Testimonial>
     </>
