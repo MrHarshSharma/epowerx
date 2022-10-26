@@ -24,7 +24,7 @@ function TestimonialSection() {
         .filter((x, i) => i > 0);
 
       setTestimonialList(objs);
-      console.log(objs);
+      // console.log(objs);
     }
 
     fetData();
