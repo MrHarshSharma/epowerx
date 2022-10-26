@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/epowerx/static/css/main.66ddf08d.css",
+    "main.js": "/epowerx/static/js/main.e85febdf.js",
+    "static/js/787.ec704a7a.chunk.js": "/epowerx/static/js/787.ec704a7a.chunk.js",
+    "static/media/MaskAI.mp4": "/epowerx/static/media/MaskAI.0db167011a90fb4ee939.mp4",
+    "static/media/invoice.mp4": "/epowerx/static/media/invoice.263589189e0678428c37.mp4",
+    "static/media/sensor1.png": "/epowerx/static/media/sensor1.86ce591b8cb52db18af0.png",
+    "static/media/basket.png": "/epowerx/static/media/basket.99a3a35420568d8864a9.png",
+    "static/media/hedgefund.png": "/epowerx/static/media/hedgefund.47a8302e036c97cc9d3f.png",
+    "static/media/buyer2.png": "/epowerx/static/media/buyer2.58dc0915259f8fa714c6.png",
+    "static/media/truck.png": "/epowerx/static/media/truck.cd6594e352eb53837008.png",
+    "static/media/credit1.png": "/epowerx/static/media/credit1.473721e35b8e0d609662.png",
+    "static/media/seo1.png": "/epowerx/static/media/seo1.0b068eeb223e04bd1ee1.png",
+    "static/media/buyer1.png": "/epowerx/static/media/buyer1.616205e2660990bbd5de.png",
+    "static/media/spam.png": "/epowerx/static/media/spam.dcd255014443b1040e0b.png",
+    "static/media/sensor2.png": "/epowerx/static/media/sensor2.bddda2c4cbc6adc3d834.png",
+    "static/media/credit2.png": "/epowerx/static/media/credit2.222d0f4502d9f206695e.png",
+    "static/media/buyer3.png": "/epowerx/static/media/buyer3.d047bb9e8acf4f0778a7.png",
+    "static/media/seo2.png": "/epowerx/static/media/seo2.dd1f002dd9d17db18b8d.png",
+    "index.html": "/epowerx/index.html",
+    "main.66ddf08d.css.map": "/epowerx/static/css/main.66ddf08d.css.map",
+    "main.e85febdf.js.map": "/epowerx/static/js/main.e85febdf.js.map",
+    "787.ec704a7a.chunk.js.map": "/epowerx/static/js/787.ec704a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66ddf08d.css",
+    "static/js/main.e85febdf.js"
+  ]
+}
