@@ -68,7 +68,7 @@ const TestimonialText = ({ children }) => {
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Avatar src={`https://lh3.googleusercontent.com/d/${src}`} alt={name} mb={2} />
+      <Avatar src={`https://drive.google.com/uc?export=view&id=${src}`} alt={name} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text
           fontWeight={600}
