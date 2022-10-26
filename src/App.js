@@ -14,13 +14,15 @@ function App() {
     <div className="App">
       {/* <NavbarSection /> */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="team" element={<TeamsPage />} />
-        <Route path="case-studies" element={<CaseStudiesPage />} />
-        <Route path="testimonials" element={<TestimonialPage />} />
-
-        <Route path="*" element={<PagenotfoundSection />} />
+        <Route path="/epowerx" element={<HomePage />}/>
       </Routes>
+      {/* // } />
+      //   <Route path="team" element={<TeamsPage />} />
+      //   <Route path="case-studies" element={<CaseStudiesPage />} />
+      //   <Route path="testimonials" element={<TestimonialPage />} />
+
+      //   <Route path="*" element={<PagenotfoundSection />} />
+      // </Routes> */}
       {/* 
     
       <VideoSection />
