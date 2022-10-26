@@ -35,7 +35,7 @@ function PeopleSection() {
   ];
   return (
   
-      <Container py={16} px={16}  maxW="full" as={Stack} spacing={12}  className='dark_bg'>
+      <Container py={16} px={16}  maxW="full" as={Stack} spacing={12}  className='dark_bg teambox'>
         <Stack spacing={0} align={"center"} color={'#fff'}>
          
             <TitleComponent heading='Who We Are'/>
@@ -45,6 +45,7 @@ function PeopleSection() {
           <Stack
             direction={{ base: "column", md: "row" }}
             spacing={{ base: 10, md: 4, lg: 10 }}
+            className=""
           >
             {
               teamMembers.map((member, i)=>{

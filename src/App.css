@@ -449,3 +449,9 @@ li.roundedBtn{
   padding: 2px 30px !important;
 }
 
+
+@media only screen and (max-width: 426px) {
+  .teambox {
+    padding:20px !important;
+  }
+}
