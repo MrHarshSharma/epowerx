@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/epowerx/static/css/main.66ddf08d.css",
-    "main.js": "/epowerx/static/js/main.9433c430.js",
+    "main.js": "/epowerx/static/js/main.cd0d29d4.js",
     "static/js/787.ec704a7a.chunk.js": "/epowerx/static/js/787.ec704a7a.chunk.js",
     "static/media/MaskAI.mp4": "/epowerx/static/media/MaskAI.0db167011a90fb4ee939.mp4",
     "static/media/invoice.mp4": "/epowerx/static/media/invoice.263589189e0678428c37.mp4",
@@ -20,11 +20,11 @@
     "static/media/seo2.png": "/epowerx/static/media/seo2.dd1f002dd9d17db18b8d.png",
     "index.html": "/epowerx/index.html",
     "main.66ddf08d.css.map": "/epowerx/static/css/main.66ddf08d.css.map",
-    "main.9433c430.js.map": "/epowerx/static/js/main.9433c430.js.map",
+    "main.cd0d29d4.js.map": "/epowerx/static/js/main.cd0d29d4.js.map",
     "787.ec704a7a.chunk.js.map": "/epowerx/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66ddf08d.css",
-    "static/js/main.9433c430.js"
+    "static/js/main.cd0d29d4.js"
   ]
 }
