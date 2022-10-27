@@ -12,11 +12,11 @@ function HomePage() {
     <>
         <HeroSection />
         {/* <FeaturesSection /> */}
-        <ServicesSection />
-        <TeamsPage />
-        <VideoSection />
-        <CaseStudiesPage />
         <TestimonialPage />
+        <ServicesSection />
+        <CaseStudiesPage />
+        <VideoSection />
+        <TeamsPage />
         <ContactSection />
         
     </>

@@ -12,6 +12,7 @@ import {
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
+import bg from "../Images/WebsiteImages/bg.gif";
 import NavbarSection from './NavbarSection';
 
 const settings = {
@@ -38,11 +39,12 @@ function HeroSection() {
   // This can be static or loaded from a server
   const cards = [
     {
-      title: 'Design Projects 1',
+      title: 'Enterprise Scale AI solutions',
+      subtitle:'Formulate | Build | Deploy',
       text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image:
-        'https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+        " Delivering High Impact business solutions using AI for last 6 years and  across 7+ domains",
+      // image:
+      //   'https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
     },
     // {
     //   title: 'Design Projects 2',
@@ -119,7 +121,7 @@ function HeroSection() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
-            backgroundImage={`url('https://static.wixstatic.com/media/5c8aaf_928409cd7d544721916db35a02f01c38~mv2.gif')`}
+            backgroundImage={`url('${bg}')`}
           
             // background={`linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%, #ffffff 50%), url('https://static.wixstatic.com/media/5c8aaf_928409cd7d544721916db35a02f01c38~mv2.gif')`}
             >
@@ -127,10 +129,11 @@ function HeroSection() {
             <NavbarSection />
             <Container size="container.lg" height="600px" position="relative" className='bannerContent' >
               <Stack
-              style={{top:'30%'}}
+              className='spacingBannerContent'
+              
                 spacing={6}
                 w={'full'}
-                maxW={'lg'}
+                maxW={'3xl'}
                 position="absolute"
                 top="50%"
                 color={"#fff"}
@@ -138,7 +141,10 @@ function HeroSection() {
                 <Heading className='CustomHeading' fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }}>
+                <Heading className='CustomHeading' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
+                  {card.subtitle}
+                </Heading>
+                <Text fontSize={{ base: 'md', lg: 'lg' }} >
                   {card.text}
                 </Text>
               </Stack>

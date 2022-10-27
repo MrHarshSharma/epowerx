@@ -15,10 +15,12 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
+  Center, List, ListItem, ListIcon 
 } from "@chakra-ui/react";
-import { Center, List, ListItem, ListIcon } from "@chakra-ui/react";
+
 import { CheckIcon } from "@chakra-ui/icons";
 import { AiOutlineArrowRight } from "react-icons/ai";
+
 import buyer_one from "../../Images/BuyerImages/buyer1.png";
 import buyer_two from "../../Images/BuyerImages/buyer2.png";
 import buyer_three from "../../Images/BuyerImages/buyer3.png";

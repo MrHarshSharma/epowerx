@@ -52,7 +52,7 @@ function BasketCaseStudy() {
               Service
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
-              <Text fontSize={"3xl"} fontWeight={200} className='caseHeading'>
+              <Text fontSize={"xl"} fontWeight={200} className='caseHeading'>
                 
                 Next basket recomendation
               </Text>

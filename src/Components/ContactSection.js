@@ -90,7 +90,7 @@ function ContactSection() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <TitleComponent heading='Contact' />
+                  <TitleComponent heading='Get Free Consultation' />
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color={'#000'}>
                     Fill up the form in right to contact us
                   </Text>

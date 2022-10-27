@@ -14,11 +14,14 @@ import invoicePoster from "../Images/Thumbnail/invoice.png"
 import maskAi from "../videos/MaskAI.mp4";
 import maskAiPoster from '../Images/Thumbnail/maskAI.png'
 
+import personalised_video from "../videos/Personalised_Video.mp4";
+import personalised_videoPoster from "../Images/Thumbnail/personalised_video.png";
+
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import TitleComponent from "./TitleComponent";
 function VideoSection() {
   return (
-    <Container maxW={"full"} py={16} color={'#fff'} as={Stack} spacing={12} className='light_bg'>
+    <Container maxW={"full"} py={16} color={'#fff'} as={Stack} spacing={12} className='dark_bg'>
       <Stack spacing={5} align={"center"}>
       
             <TitleComponent heading='Product Videos'/>
@@ -38,12 +41,14 @@ function VideoSection() {
                   className="active roundedBtn"
                  
                 >
-                  <span>Invoice: This a description line that is added here</span>
+                  <span>Invoice Data Extraction</span>
                 </li>
                 <li data-target="#VideoCourasal" data-slide-to="1"  className=" roundedBtn">
-                  <span>Mask: This a description line that is added here</span>
+                  <span>Style Transfer</span>
                 </li>
-                      
+                <li data-target="#VideoCourasal" data-slide-to="2"  className=" roundedBtn">
+                  <span>Personalized Videos</span>
+                </li>     
               </ol>
             </Stack>
             <Stack flex={2} spacing={{ base: 5, md: 10 }} className="Player">
@@ -62,7 +67,13 @@ function VideoSection() {
                     </video>
                   </div>
                 </div>
-               
+                <div class="carousel-item">
+                  <div className="VideoContainer">
+                    <video controls poster={personalised_videoPoster}>
+                      <source src={personalised_video}></source>
+                    </video>
+                  </div>
+                </div>
               </div>
               <a
                 class="carousel-control-prev"
@@ -70,7 +81,7 @@ function VideoSection() {
                 role="button"
                 data-slide="prev"
               >
-                <BiLeftArrowAlt />
+                <BiLeftArrowAlt/>
 
                 <span class="sr-only">Previous</span>
               </a>

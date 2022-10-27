@@ -1,8 +1,25 @@
 import React, { useLayoutEffect, useState } from "react";
-import { Box, Heading, Text, Stack, Container } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Stack,
+  Container,
+  Wrap,
+  WrapItem,
+  Center,
+} from "@chakra-ui/react";
 import SingleTestimonial from "./SingleTestimonial";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import TitleComponent from "../TitleComponent";
+
+import indiamart from "../../Images/clientLogos/indiamart.png";
+import intertrust_group from "../../Images/clientLogos/intertrust_group.png";
+import iquanti from "../../Images/clientLogos/iquanti.png";
+import seehow from "../../Images/clientLogos/seehow.png";
+import spinny from "../../Images/clientLogos/spinny.jpg";
+import truckstop_ftr from "../../Images/clientLogos/truckstop_ftr.png";
+import PartnersSection from "../PartnersSection";
 
 function TestimonialSection() {
   const [TestimonialList, setTestimonialList] = useState([]);
@@ -35,8 +52,44 @@ function TestimonialSection() {
       <Box className="light_bg">
         <Container maxW={"full"} py={16} as={Stack} spacing={12}>
           <Stack spacing={0} align={"center"} color={"#fff"}>
-            <TitleComponent heading="Our Clients Speak" />
+            <TitleComponent heading="Our Clients Do The Talking" />
             {/* <Text color="#43ada5">We have been working with clients around the world</Text> */}
+          </Stack>
+          <Stack>
+            <Wrap spacing="40px" justify="center" className="partnerCarousal">
+              <WrapItem>
+                <Center w="100px" h="100px">
+                  <img src={indiamart} alt="indiamart" />
+                </Center>
+              </WrapItem>
+              <WrapItem>
+                <Center w="100px" h="100px">
+                  <img src={iquanti} alt="iquanti" />
+                </Center>
+              </WrapItem>
+              <WrapItem>
+                <Center w="150px" h="100px">
+                  <img src={intertrust_group} alt="intertrust_group" />
+                </Center>
+              </WrapItem>
+              <WrapItem>
+                <Center w="150px" h="100px">
+                  <img src={seehow} alt="seehow" />
+                </Center>
+              </WrapItem>
+              <WrapItem>
+                <Center w="100px" h="100px" bg="blackAlpha.500">
+                  <img src={spinny} alt="spinny" />
+                </Center>
+              </WrapItem>
+
+              <WrapItem>
+                <Center w="100px" h="100px" bg="blackAlpha.500">
+                  <img src={truckstop_ftr} alt="truckstop_ftr" />
+                </Center>
+              </WrapItem>
+            </Wrap>
+            {/* <PartnersSection /> */}
           </Stack>
           <Stack
             direction={{ base: "column", md: "row" }}

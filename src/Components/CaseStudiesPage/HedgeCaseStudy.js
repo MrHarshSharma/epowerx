@@ -1,12 +1,9 @@
 import React from "react";
 import {
   Box,
-  Heading,
-  Link,
-
+ 
   Text,
   Button,
- 
   Stack,
   useColorModeValue,
   Modal,
@@ -17,73 +14,91 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
+  Center, List, ListItem, ListIcon 
 } from "@chakra-ui/react";
+
 import hedgefund from "../../Images/HedgeFundImages/hedgefund.png";
-import CaseTags from "./CaseTags";
+
+import { CheckIcon } from "@chakra-ui/icons";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 function HedgeCaseStudy() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Stack>
+       <Center py={6}>
         <Box
-          marginTop={{ base: "1", sm: "5" }}
-          display="flex"
-          flexDirection={{ base: "column", sm: "row" }}
-          justifyContent="space-between"
-          className="big_cont"
+          maxW={"330px"}
+          w={"full"}
+         className='gradientBG'
+          boxShadow={"base"}
+          rounded={"md"}
+          overflow={"hidden"}
         >
-          <Box
-            display="flex"
-            flex="1"
-            marginRight="3"
-            position="relative"
-            alignItems="center"
+          <Stack
+            textAlign={"center"}
+            p={6}
+            color={useColorModeValue("gray.800", "white")}
+            align={"center"}
           >
-            <Box zIndex="1" width="100%" position="absolute" height="100%">
-              <Box
-                bgGradient={useColorModeValue(
-                  "radial(orange.600 1px, transparent 1px)",
-                  "radial(orange.300 1px, transparent 1px)"
-                )}
-                backgroundSize="20px 20px"
-                opacity="0.4"
-                height="100%"
-              />
-            </Box>
-          </Box>
-          <Box
-            display="flex"
-            flex="1"
-            flexDirection="column"
-            justifyContent="center"
-            marginTop={{ base: "3", sm: "0" }}
-          >
-            <CaseTags tags={["Service"]} />
-            <Heading marginTop="1">
-              <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                Hedge Fund Reconsiliation using ML
-              </Link>
-            </Heading>
             <Text
-              as="p"
-              marginTop="2"
-              color={useColorModeValue("gray.700", "gray.200")}
-              fontSize="lg"
+              fontSize={"md"}
+              fontWeight={500}
+             className='light_bg'
+              p={2}
+              px={3}
+              color={"#fff"}
+              rounded={"full"}
             >
-              Daily reconciliation of transactions between fund and broker.
-              Caters to huge volume and long tail problem using ML.
+              Service
             </Text>
-            <Button onClick={onOpen} className="btn_yellow">
-              Read more
+            <Stack direction={"row"} align={"center"} justify={"center"}>
+              <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
+              Hedge Fund Reconsiliation using ML
+
+              </Text>
+            </Stack>
+          </Stack>
+
+          <Box style={{color:'white'}} px={6} py={10} className='caseStudyContent'>
+            <List spacing={3}>
+              <ListItem>
+                <ListIcon as={CheckIcon} color="white.400" />
+                Daily reconciliation of transactions between fund and broker.
+              Caters to huge volume and long tail problem using ML.
+            
+              </ListItem>
+            </List>
+
+            <Button
+              onClick={onOpen}
+              className="btn_yellow roundedBtn "
+              mt={10}
+              w={"full"}
+              color={"black"}
+             
+              boxShadow={"0 5px 20px 0px rgb(217 203 34 / 43%)"}
+            >
+              Read More
             </Button>
-            <Modal onClose={onClose} isOpen={isOpen} size={"full"}>
+
+            <Modal onClose={onClose} isOpen={isOpen} size={"full"} >
               <ModalOverlay />
-              <ModalContent>
-                <ModalHeader>Hedge Fund Reconsiliation using ML</ModalHeader>
+              <ModalContent className="gradientBG">
+                <ModalHeader fontSize='3xl'>
+                Hedge Fund Reconsiliation using ML
+
+                </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
-                  <img src={hedgefund} />
+                  {/* <div className="slidernote">
+                    <Text>Slide to explore</Text> <AiOutlineArrowRight />
+                  </div> */}
+                  <div className="ImagesSlider">
+                    <img src={hedgefund} />
+                  </div>
+
+                  {/* <img src={buyer_two} /><br /> */}
                 </ModalBody>
                 <ModalFooter>
                   <Button className="modal_closeBtn" mr={3} onClick={onClose}>
@@ -94,7 +109,7 @@ function HedgeCaseStudy() {
             </Modal>
           </Box>
         </Box>
-      </Stack>
+      </Center>
     </>
   );
 }
