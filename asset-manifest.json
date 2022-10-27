@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/epowerx/static/css/main.d14e94fd.css",
-    "main.js": "/epowerx/static/js/main.a02d11b5.js",
+    "main.css": "/epowerx/static/css/main.81007d46.css",
+    "main.js": "/epowerx/static/js/main.d0e352dd.js",
     "static/js/787.ec704a7a.chunk.js": "/epowerx/static/js/787.ec704a7a.chunk.js",
+    "static/media/Personalised_Video.mp4": "/epowerx/static/media/Personalised_Video.1e7273ddb5ac38f475f2.mp4",
     "static/media/MaskAI.mp4": "/epowerx/static/media/MaskAI.0db167011a90fb4ee939.mp4",
+    "static/media/bg.gif": "/epowerx/static/media/bg.a20bbb092a3c7542df00.gif",
     "static/media/invoice.mp4": "/epowerx/static/media/invoice.263589189e0678428c37.mp4",
+    "static/media/invoice.png": "/epowerx/static/media/invoice.522706273f6db5e27ccd.png",
+    "static/media/personalised_video.png": "/epowerx/static/media/personalised_video.628e0f79fbd09709adfc.png",
+    "static/media/maskAI.png": "/epowerx/static/media/maskAI.93e68f1129b27a6159f8.png",
     "static/media/sensor1.png": "/epowerx/static/media/sensor1.86ce591b8cb52db18af0.png",
     "static/media/basket.png": "/epowerx/static/media/basket.99a3a35420568d8864a9.png",
     "static/media/hedgefund.png": "/epowerx/static/media/hedgefund.47a8302e036c97cc9d3f.png",
@@ -17,14 +22,23 @@
     "static/media/sensor2.png": "/epowerx/static/media/sensor2.bddda2c4cbc6adc3d834.png",
     "static/media/credit2.png": "/epowerx/static/media/credit2.222d0f4502d9f206695e.png",
     "static/media/buyer3.png": "/epowerx/static/media/buyer3.d047bb9e8acf4f0778a7.png",
+    "static/media/indiamart.png": "/epowerx/static/media/indiamart.f34ae267809bfc1dfc6e.png",
+    "static/media/serviceImg.avif": "/epowerx/static/media/serviceImg.916286f3cbedf039dcbc.avif",
     "static/media/seo2.png": "/epowerx/static/media/seo2.dd1f002dd9d17db18b8d.png",
+    "static/media/intertrust_group.png": "/epowerx/static/media/intertrust_group.face84cc352cb6115b24.png",
+    "static/media/iquanti.png": "/epowerx/static/media/iquanti.b46b29590cf44f07d804.png",
+    "static/media/spinny.jpg": "/epowerx/static/media/spinny.95d0430dda369fadd433.jpg",
+    "static/media/revicons.eot": "/epowerx/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/seehow.png": "/epowerx/static/media/seehow.cc3015f1b48d2493dc98.png",
+    "static/media/revicons.ttf": "/epowerx/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/epowerx/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/epowerx/index.html",
-    "main.d14e94fd.css.map": "/epowerx/static/css/main.d14e94fd.css.map",
-    "main.a02d11b5.js.map": "/epowerx/static/js/main.a02d11b5.js.map",
+    "main.81007d46.css.map": "/epowerx/static/css/main.81007d46.css.map",
+    "main.d0e352dd.js.map": "/epowerx/static/js/main.d0e352dd.js.map",
     "787.ec704a7a.chunk.js.map": "/epowerx/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d14e94fd.css",
-    "static/js/main.a02d11b5.js"
+    "static/css/main.81007d46.css",
+    "static/js/main.d0e352dd.js"
   ]
 }
