@@ -20,7 +20,6 @@ import {
 import hedgefund from "../../Images/HedgeFundImages/hedgefund.png";
 
 import { CheckIcon } from "@chakra-ui/icons";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 function HedgeCaseStudy() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -40,6 +39,7 @@ function HedgeCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -54,7 +54,7 @@ function HedgeCaseStudy() {
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
               <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              Hedge Fund Reconsiliation using ML
+              Hedge Fund Trade Consciliation Using AI
 
               </Text>
             </Stack>
@@ -64,8 +64,7 @@ function HedgeCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Daily reconciliation of transactions between fund and broker.
-              Caters to huge volume and long tail problem using ML.
+                Raise trade matching accuracy to 95% and reduced resource time cost by 60% 
             
               </ListItem>
             </List>
@@ -86,7 +85,8 @@ function HedgeCaseStudy() {
               <ModalOverlay />
               <ModalContent className="gradientBG">
                 <ModalHeader fontSize='3xl'>
-                Hedge Fund Reconsiliation using ML
+              Hedge Fund Trade Consciliation Using AI
+                
 
                 </ModalHeader>
                 <ModalCloseButton />
@@ -95,7 +95,7 @@ function HedgeCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div> */}
                   <div className="ImagesSlider">
-                    <img src={hedgefund} />
+                    <img src={hedgefund} alt="hedgefund" />
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}

@@ -3,12 +3,9 @@ import {
   Container,
   Flex,
   Box,
- 
   Text,
- 
   Button,
   VStack,
-
   Wrap,
   WrapItem,
   FormControl,
@@ -17,16 +14,9 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
-
 } from "@chakra-ui/react";
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-
-  MdOutlineEmail,
-} from "react-icons/md";
-import {  BsPerson } from "react-icons/bs";
+import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import { BsPerson } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
 import TitleComponent from "./TitleComponent";
@@ -70,7 +60,7 @@ function ContactSection() {
 
   return (
     <Container
-    className="dark_bg"
+      className="dark_bg"
       maxW="full"
       mt={0}
       py={8}
@@ -90,19 +80,24 @@ function ContactSection() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <TitleComponent heading='Get Free Consultation' />
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color={'#000'}>
+                  <TitleComponent heading="Get Free Consultation" />
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color={"#000"}>
                     Fill up the form in right to contact us
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={0} spacing={0} alignItems="flex-start" className="contactBtns">
+                    <VStack
+                      pl={0}
+                      spacing={0}
+                      alignItems="flex-start"
+                      className="contactBtns"
+                    >
                       <Button
                         size="md"
                         height="25px"
                         width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none", cursor:'text' }}
+                        _hover={{ border: "none", cursor: "text" }}
                         _active={{ border: "none" }}
                         leftIcon={<MdPhone size="20px" />}
                       >
@@ -114,7 +109,7 @@ function ContactSection() {
                         width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none", cursor:'text' }}
+                        _hover={{ border: "none", cursor: "text" }}
                         _active={{ border: "none" }}
                         leftIcon={<MdPhone size="20px" />}
                       >
@@ -126,10 +121,10 @@ function ContactSection() {
                         width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none", cursor:'text' }}
+                        _hover={{ border: "none", cursor: "text" }}
                         _active={{ border: "none" }}
                         leftIcon={<MdEmail size="20px" />}
-                        style={{marginTop:'20px'}}
+                        style={{ marginTop: "20px" }}
                       >
                         abhijeet@epowerx.ai
                       </Button>
@@ -139,7 +134,7 @@ function ContactSection() {
                         width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns"
-                        _hover={{ border: "none", cursor:'text' }}
+                        _hover={{ border: "none", cursor: "text" }}
                         _active={{ border: "none" }}
                         leftIcon={<MdEmail size="20px" />}
                       >
@@ -151,17 +146,18 @@ function ContactSection() {
                         width="250px"
                         variant="ghost"
                         className="contanctFormLeftBtns address"
-                        _hover={{ border: "none", cursor:'text' }}
+                        _hover={{ border: "none", cursor: "text" }}
                         _active={{ border: "none" }}
                         leftIcon={<MdLocationOn size="20px" />}
-                        style={{marginTop:'20px'}}
+                        style={{ marginTop: "20px" }}
                       >
-                        39, 2nd Floor, Suite #215,<br /> NGEF Lane, Indiranagar,<br /> First Stage, Bengaluru,<br /> Karnataka - 560038, India
+                        39, 2nd Floor, Suite #215,
+                        <br /> NGEF Lane, Indiranagar,
+                        <br /> First Stage, Bengaluru,
+                        <br /> Karnataka - 560038, India
                       </Button>
                     </VStack>
-
                   </Box>
-                 
                 </Box>
               </WrapItem>
               <WrapItem>
@@ -176,7 +172,12 @@ function ContactSection() {
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md" name="user_name" required/>
+                            <Input
+                              type="text"
+                              size="md"
+                              name="user_name"
+                              required
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -186,7 +187,12 @@ function ContactSection() {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="gray.800" />}
                             />
-                            <Input type="email" size="md" name="user_email" required/>
+                            <Input
+                              type="email"
+                              size="md"
+                              name="user_email"
+                              required
+                            />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">

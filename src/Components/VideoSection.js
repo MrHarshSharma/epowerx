@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  Container,
-  Stack,
-
-  Heading,
-  Text,
-  Icon,
- 
-} from "@chakra-ui/react";
+import { Container, Stack, Icon } from "@chakra-ui/react";
 import invoice from "../videos/invoice.mp4";
-import invoicePoster from "../Images/Thumbnail/invoice.png"
+import invoicePoster from "../Images/Thumbnail/invoice.png";
 
 import maskAi from "../videos/MaskAI.mp4";
-import maskAiPoster from '../Images/Thumbnail/maskAI.png'
+import maskAiPoster from "../Images/Thumbnail/maskAI.png";
 
 import personalised_video from "../videos/Personalised_Video.mp4";
 import personalised_videoPoster from "../Images/Thumbnail/personalised_video.png";
@@ -21,34 +13,53 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import TitleComponent from "./TitleComponent";
 function VideoSection() {
   return (
-    <Container maxW={"full"} py={16} color={'#fff'} as={Stack} spacing={12} className='dark_bg'>
+    <Container
+      maxW={"full"}
+      py={16}
+      color={"#fff"}
+      as={Stack}
+      spacing={12}
+      className="dark_bg"
+    >
       <Stack spacing={5} align={"center"}>
-      
-            <TitleComponent heading='Product Videos'/>
+        <TitleComponent heading="Product Videos" />
       </Stack>
       <Stack>
-        <div id="VideoCourasal" class="carousel slide" data-ride="carousel" data-interval="false">
-        <Stack
-        align={'start'}
-        spacing={{ base: 8, md: 10 }}
-        // py={{ base: 8, md: 8 }}
-        direction={{ base: 'column', md: 'row' }}>
-             <Stack flex={1} spacing={{ base: 5, md: 10 }} className='PlayList'>
+        <div
+          id="VideoCourasal"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <Stack
+            align={"start"}
+            spacing={{ base: 8, md: 10 }}
+            // py={{ base: 8, md: 8 }}
+            direction={{ base: "column", md: "row" }}
+          >
+            <Stack flex={1} spacing={{ base: 5, md: 10 }} className="PlayList">
               <ol class="carousel-indicators">
                 <li
                   data-target="#VideoCourasal"
                   data-slide-to="0"
                   className="active roundedBtn"
-                 
                 >
                   <span>Invoice Data Extraction</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="1"  className=" roundedBtn">
+                <li
+                  data-target="#VideoCourasal"
+                  data-slide-to="1"
+                  className=" roundedBtn"
+                >
                   <span>Style Transfer</span>
                 </li>
-                <li data-target="#VideoCourasal" data-slide-to="2"  className=" roundedBtn">
+                <li
+                  data-target="#VideoCourasal"
+                  data-slide-to="2"
+                  className=" roundedBtn"
+                >
                   <span>Personalized Videos</span>
-                </li>     
+                </li>
               </ol>
             </Stack>
             <Stack flex={2} spacing={{ base: 5, md: 10 }} className="Player">
@@ -81,7 +92,7 @@ function VideoSection() {
                 role="button"
                 data-slide="prev"
               >
-                <BiLeftArrowAlt/>
+                <BiLeftArrowAlt />
 
                 <span class="sr-only">Previous</span>
               </a>
@@ -98,7 +109,6 @@ function VideoSection() {
           </Stack>
         </div>
       </Stack>
-     
     </Container>
   );
 }

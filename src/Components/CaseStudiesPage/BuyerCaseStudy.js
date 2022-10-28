@@ -43,6 +43,7 @@ function BuyerCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -57,7 +58,7 @@ function BuyerCaseStudy() {
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
               <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-                Buyer supplier matchmaking for B2B Marketplace
+              Buyer Supplier Matchmaking For B2B Marketplace
               </Text>
             </Stack>
           </Stack>
@@ -66,8 +67,7 @@ function BuyerCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Sellers of indiamart pay subscription for relevant leads of
-                their products. 
+                Boosted transaction per seller by 50% and reduced monthly churn to 3.5% 
               </ListItem>
             </List>
 
@@ -87,7 +87,7 @@ function BuyerCaseStudy() {
               <ModalOverlay />
               <ModalContent className="gradientBG">
                 <ModalHeader fontSize='3xl'>
-                  Buyer supplier matchmaking for B2B Marketplace
+                  Buyer Supplier Matchmaking For B2B Marketplace
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
@@ -95,11 +95,11 @@ function BuyerCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div>
                   <div className="ImagesSlider">
-                    <img class="" src={buyer_one} />
+                    <img alt="buyer_one" src={buyer_one} />
 
-                    <img class="" src={buyer_two} />
+                    <img alt="buyer_two" src={buyer_two} />
 
-                    <img class="" src={buyer_three} />
+                    <img alt="buyer_three" src={buyer_three} />
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}

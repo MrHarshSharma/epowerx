@@ -1,30 +1,27 @@
-import React from 'react'
+import React from "react";
 import {
-    Box,
-    Heading,
-    Link,
-    Text,
-    Button,
-    Stack,
-    useColorModeValue,
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    useDisclosure,
-  Center, List, ListItem, ListIcon 
+  Box,
+  Text,
+  Button,
+  Stack,
+  useColorModeValue,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Center,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react";
 
-  } from "@chakra-ui/react";
+import { CheckIcon } from "@chakra-ui/icons";
 
-  import { CheckIcon } from "@chakra-ui/icons";
-  import { AiOutlineArrowRight } from "react-icons/ai";
-
-  import spam from "../../Images/SpamImages/spam.png";
- 
-  
+import spam from "../../Images/SpamImages/spam.png";
 
 function SpamCaseStudy() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -34,7 +31,7 @@ function SpamCaseStudy() {
         <Box
           maxW={"330px"}
           w={"full"}
-         className='gradientBG'
+          className="gradientBG"
           boxShadow={"base"}
           rounded={"md"}
           overflow={"hidden"}
@@ -44,11 +41,12 @@ function SpamCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
               fontWeight={500}
-             className='light_bg'
+              className="light_bg"
               p={2}
               px={3}
               color={"#fff"}
@@ -57,19 +55,23 @@ function SpamCaseStudy() {
               Service
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
-              <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              Spam filtering of customer support emails
-
+              <Text fontSize={"xl"} fontWeight={200} className="caseHeading">
+                Spam Detection In Customer Support Emails
               </Text>
             </Stack>
           </Stack>
 
-          <Box style={{color:'white'}} px={6} py={10} className='caseStudyContent'>
+          <Box
+            style={{ color: "white" }}
+            px={6}
+            py={10}
+            className="caseStudyContent"
+          >
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Manual agent mark customer mails as spam vs non spam. They are critical as they are critial email.
-
+                Monthly saving of 20 lakhs at the current state / core NLP
+                project
               </ListItem>
             </List>
 
@@ -79,18 +81,16 @@ function SpamCaseStudy() {
               mt={10}
               w={"full"}
               color={"black"}
-             
               boxShadow={"0 5px 20px 0px rgb(217 203 34 / 43%)"}
             >
               Read More
             </Button>
 
-            <Modal onClose={onClose} isOpen={isOpen} size={"full"} >
+            <Modal onClose={onClose} isOpen={isOpen} size={"full"}>
               <ModalOverlay />
               <ModalContent className="gradientBG">
-                <ModalHeader fontSize='3xl'>
-                Spam filtering of customer support emails
-
+                <ModalHeader fontSize="3xl">
+                  Spam Detection In Customer Support Emails
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
@@ -98,7 +98,7 @@ function SpamCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div> */}
                   <div className="ImagesSlider">
-                  <img src={spam} />
+                    <img src={spam} alt="spam" />
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}
@@ -117,4 +117,4 @@ function SpamCaseStudy() {
   );
 }
 
-export default SpamCaseStudy
+export default SpamCaseStudy;

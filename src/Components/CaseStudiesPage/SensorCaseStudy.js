@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Box,
-  Heading,
-  Link,
   Text,
   Button,
   Stack,
@@ -44,6 +42,7 @@ function SensorCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -58,8 +57,7 @@ function SensorCaseStudy() {
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
               <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              Sensor based event recognition using deep learning
-
+              Sensor Based Event Eecognition Using Deep Learning
               </Text>
             </Stack>
           </Stack>
@@ -68,8 +66,7 @@ function SensorCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Quantitative feedback for bowlers by deploying chip inside a cricket ball and showing the results on an app.
-
+                  Calculated Pace, Swing and Seam position of cricket ball
               </ListItem>
             </List>
 
@@ -89,7 +86,7 @@ function SensorCaseStudy() {
               <ModalOverlay />
               <ModalContent className="gradientBG">
                 <ModalHeader fontSize='3xl'>
-                Sensor based event recognition using deep learning
+                Sensor Based Event Eecognition Using Deep Learning
 
                 </ModalHeader>
                 <ModalCloseButton />
@@ -98,8 +95,8 @@ function SensorCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div>
                   <div className="ImagesSlider">
-                  <img src={sensor_one} /><br />
-                  <img src={sensor_two} />
+                  <img src={sensor_one} alt="sensor_one" /><br />
+                  <img src={sensor_two} alt="sensor_two" />
                   </div>
 
                  </ModalBody>

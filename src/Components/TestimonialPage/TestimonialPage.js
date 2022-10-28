@@ -1,17 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import TestimonialSection from './TestimonialSection'
-
-
+import TestimonialSection from "./TestimonialSection";
 
 function TestimonialPage() {
   return (
     <>
-     
-        <TestimonialSection />
-       
+      <TestimonialSection />
     </>
-  )
+  );
 }
 
-export default TestimonialPage
+export default TestimonialPage;

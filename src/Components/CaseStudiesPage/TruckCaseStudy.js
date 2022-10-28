@@ -1,8 +1,7 @@
 import React from "react";
 import {
   Box,
-  Heading,
-  Link,
+
   Text,
   Button,
   Stack,
@@ -19,10 +18,8 @@ import {
 } from "@chakra-ui/react";
 
 import { CheckIcon } from "@chakra-ui/icons";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 import truck from "../../Images/TruckImages/truck.png";
-import CaseTags from "./CaseTags";
 
 function TruckCaseStudy() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,6 +39,7 @@ function TruckCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -95,7 +93,7 @@ function TruckCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div> */}
                   <div className="ImagesSlider">
-                  <img src={truck} />
+                  <img src={truck} alt="truck"/>
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}

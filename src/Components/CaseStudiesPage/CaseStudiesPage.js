@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Heading,
-  Stack,
-  Container,
-  Box,
-  Center,
-  Text,
-  List,
-  ListItem,
-  ListIcon,
-  Button,
-} from "@chakra-ui/react";
+import { Stack, Container } from "@chakra-ui/react";
 import HedgeCaseStudy from "./HedgeCaseStudy";
 import TruckCaseStudy from "./TruckCaseStudy";
 import SensorCaseStudy from "./SensorCaseStudy";
@@ -19,9 +8,6 @@ import CreditCaseStudy from "./CreditCaseStudy";
 import BasketCaseStudy from "./BasketCaseStudy";
 import SeoCaseStudy from "./SeoCaseStudy";
 import SpamCaseStudy from "./SpamCaseStudy";
-import ContactSection from "../ContactSection";
-import { useColorModeValue } from "@chakra-ui/react";
-import { CheckIcon } from "@chakra-ui/icons";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import TitleComponent from "../TitleComponent";
 
@@ -46,30 +32,29 @@ function CaseStudiesPage() {
                 style={{ background: "transparent" }}
               >
                 <div class="active carousel-item col-md-4">
-                  {/* add here  */}
-                  <BasketCaseStudy />
+                  <SensorCaseStudy />
                 </div>
                 <div class="carousel-item col-md-4">
                   <BuyerCaseStudy />
                 </div>
                 <div class="carousel-item col-md-4">
-                  <CreditCaseStudy />
-                </div>
-                <div class="carousel-item col-md-4">
                   <HedgeCaseStudy />
                 </div>
                 <div class="carousel-item col-md-4">
-                  <SensorCaseStudy />
-                </div>
-                <div class="carousel-item col-md-4">
-                  <SeoCaseStudy />
+                  <CreditCaseStudy />
                 </div>
                 <div class="carousel-item col-md-4">
                   <SpamCaseStudy />
                 </div>
-                <div class="carousel-item col-md-4">
-                  <TruckCaseStudy />
+                <div class=" carousel-item col-md-4">
+                  <BasketCaseStudy />
                 </div>
+                <div class="carousel-item col-md-4">
+                  <SeoCaseStudy />
+                </div>
+                {/* <div class="carousel-item col-md-4">
+                  <TruckCaseStudy />
+                </div> */}
               </div>
               <a
                 class="carousel-control-prev"
@@ -93,20 +78,6 @@ function CaseStudiesPage() {
           </div>
         </Stack>
       </Container>
-
-      {/* <Container maxW={"7xl"} p="12" as={Stack} spacing={12}>
-        <Heading as="h1">Case studies by Epowerx</Heading> */}
-      {/* <HedgeCaseStudy />
-        <TruckCaseStudy />
-        <SensorCaseStudy />
-        <BuyerCaseStudy />
-        <CreditCaseStudy />
-        <BasketCaseStudy />
-        <SeoCaseStudy />
-        <SpamCaseStudy /> */}
-
-      {/* </Container> */}
-      {/* <ContactSection /> */}
     </>
   );
 }

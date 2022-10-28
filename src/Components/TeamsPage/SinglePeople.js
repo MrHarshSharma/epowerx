@@ -15,7 +15,6 @@ function SinglePeople({ member }) {
     <Box
       maxW={"620px"}
       w={"full"}
-      // bg={useColorModeValue("white", "gray.900")}
       className='gradientBG'
       rounded={"lg"}
       p={6}
@@ -25,10 +24,7 @@ function SinglePeople({ member }) {
     >
       <Avatar
         size={"xl"}
-        // src={
-        //   "https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-        // }
-
+        
         src={`TeamImages/${member.imagename}.jpeg`}
         alt={"Avatar Alt"}
         mb={4}
@@ -86,25 +82,13 @@ function SinglePeople({ member }) {
         >
           <Button
             bg="#d2d2d2"
-            // _focus={{
-            //   bg: "gray.200",
-            // }}
+           
             className='btn_secondary'
           >
             Email
           </Button>
         </Link>
-        {/* <Link
-          href={"#Contact"}
-          flex={1}
-          fontSize={"sm"}
-          style={{ textDecoration: "none" }}
-          rounded={"full"}
-        >
-          <Button className="btn_yellow" color={"black"}>
-            Call
-          </Button>
-        </Link> */}
+        
       </Stack>
     </Box>
   );

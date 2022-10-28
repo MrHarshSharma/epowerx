@@ -2,7 +2,6 @@ import React from "react";
 import {
   Box,
   Flex,
-  Heading,
   Text,
   Stack,
   Avatar,
@@ -44,13 +43,6 @@ const TestimonialContent = ({ children }) => {
   );
 };
 
-// const TestimonialHeading = ({ children }) => {
-//   return (
-//     <Heading as={"h3"} fontSize={"xl"} kwy={children}>
-//       {children}
-//     </Heading>
-//   );
-// };
 
 const TestimonialText = ({ children }) => {
   return (

@@ -1,8 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
 import {
   Box,
-  Heading,
-  Text,
   Stack,
   Container,
   Wrap,
@@ -19,7 +17,6 @@ import iquanti from "../../Images/clientLogos/iquanti.png";
 import seehow from "../../Images/clientLogos/seehow.png";
 import spinny from "../../Images/clientLogos/spinny.jpg";
 import truckstop_ftr from "../../Images/clientLogos/truckstop_ftr.png";
-import PartnersSection from "../PartnersSection";
 
 function TestimonialSection() {
   const [TestimonialList, setTestimonialList] = useState([]);
@@ -29,6 +26,7 @@ function TestimonialSection() {
         "https://sheets.googleapis.com/v4/spreadsheets/1yBgGcCQlg6sO6Jcq0cD7mB1cRq8oykDCTcuCxpTAzRQ/values/Sheet1!A1:Z100?key=AIzaSyCSNSt1fR5ube1KmpR5WMclNBAqbusArGk"
       );
       const data = await res.json();
+
       let fetchedata = await data.values;
 
       let objs = fetchedata
@@ -41,7 +39,7 @@ function TestimonialSection() {
         .filter((x, i) => i > 0);
 
       setTestimonialList(objs);
-      // console.log(objs);
+      console.log(objs);
     }
 
     fetData();
@@ -89,7 +87,6 @@ function TestimonialSection() {
                 </Center>
               </WrapItem>
             </Wrap>
-            {/* <PartnersSection /> */}
           </Stack>
           <Stack
             direction={{ base: "column", md: "row" }}
@@ -107,7 +104,7 @@ function TestimonialSection() {
                   {TestimonialList.map((item, i) => {
                     return (
                       <>
-                        {i == 0 ? (
+                        {i === 0 ? (
                           <div key={i} class="active carousel-item col-md-4">
                             <SingleTestimonial
                               key={`${i}-feedback`}

@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import PeopleSection from './PeopleSection'
-
+import PeopleSection from "./PeopleSection";
 
 function TeamsPage() {
   return (
     <>
-        <PeopleSection />
-      
+      <PeopleSection />
     </>
-  )
+  );
 }
 
-export default TeamsPage
+export default TeamsPage;

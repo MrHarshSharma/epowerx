@@ -1,8 +1,7 @@
 import React from 'react'
 import {
     Box,
-    Heading,
-    Link,
+  
     Text,
     Button,
     Stack,
@@ -45,6 +44,7 @@ function SeoCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -59,7 +59,7 @@ function SeoCaseStudy() {
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
               <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              ALPS | A SEO product
+              ALPS | An Semi-automated SEO Product
 
               </Text>
             </Stack>
@@ -69,7 +69,7 @@ function SeoCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                A product that boosts your website's ranking on the web and hence increase the ROI. The product is helpful in improving keywords relevancy and on-page optimisation.
+                  3-4% increase in web ranking and 20% in Rol
  
               </ListItem>
             </List>
@@ -90,7 +90,7 @@ function SeoCaseStudy() {
               <ModalOverlay />
               <ModalContent className="gradientBG">
                 <ModalHeader fontSize='3xl'>
-                ALPS | A SEO product
+                ALPS | An Semi-automated SEO Product
 
                 </ModalHeader>
                 <ModalCloseButton />
@@ -99,8 +99,8 @@ function SeoCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div>
                   <div className="ImagesSlider">
-                  <img src={seo_one} />
-                  <img src={seo_two} />
+                  <img src={seo_one} alt="seo_one" />
+                  <img src={seo_two} alt="seo_two" />
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}

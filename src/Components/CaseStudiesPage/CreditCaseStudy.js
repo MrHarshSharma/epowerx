@@ -40,6 +40,7 @@ function CreditCaseStudy() {
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
               fontSize={"md"}
@@ -54,7 +55,7 @@ function CreditCaseStudy() {
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
               <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              Measuring credit worthiness of borrower
+              Measuring Credit Worthiness Of Borrower
               </Text>
             </Stack>
           </Stack>
@@ -63,7 +64,7 @@ function CreditCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Calculated chances of default for a consumer lending startup and hence gave a credit score to person. Deped this in product.  
+                Default rate went to 0.5% and loan book grew by 20%
    
               </ListItem>
             </List>
@@ -84,7 +85,8 @@ function CreditCaseStudy() {
               <ModalOverlay />
               <ModalContent className="gradientBG">
                 <ModalHeader fontSize='3xl'>
-                Measuring credit worthiness of borrower
+              Measuring Credit Worthiness Of Borrower
+                
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
@@ -92,8 +94,8 @@ function CreditCaseStudy() {
                     <Text>Slide to explore</Text> <AiOutlineArrowRight />
                   </div>
                   <div className="ImagesSlider">
-                  <img src={credit_one} /><br />
-                  <img src={credit_two} />
+                  <img src={credit_one}  alt="credit_one"/><br />
+                  <img src={credit_two}  alt="credit_two" />
                   </div>
 
                   {/* <img src={buyer_two} /><br /> */}

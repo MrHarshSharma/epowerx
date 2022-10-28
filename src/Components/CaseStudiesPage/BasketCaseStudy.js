@@ -33,12 +33,14 @@ function BasketCaseStudy() {
           boxShadow={"base"}
           rounded={"md"}
           overflow={"hidden"}
+          
         >
           <Stack
             textAlign={"center"}
             p={6}
             color={useColorModeValue("gray.800", "white")}
             align={"center"}
+            className="caseHeader"
           >
             <Text
                fontSize={"md"}
@@ -52,9 +54,9 @@ function BasketCaseStudy() {
               Service
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
-              <Text fontSize={"xl"} fontWeight={200} className='caseHeading'>
+              <Text fontSize={"2xl"} fontWeight={200} className='caseHeading'>
                 
-                Next basket recomendation
+                Next Basket Recommender
               </Text>
             </Stack>
           </Stack>
@@ -69,8 +71,7 @@ function BasketCaseStudy() {
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
-                Predicts time and products in the next basket of user of a
-                retail chain.
+                  Research to engineering project
               </ListItem>
             </List>
 
@@ -88,10 +89,10 @@ function BasketCaseStudy() {
             <Modal onClose={onClose} isOpen={isOpen} size={"full"}>
               <ModalOverlay />
               <ModalContent className="gradientBG">
-                <ModalHeader fontSize='3xl'>Next basket recomendations </ModalHeader>
+                <ModalHeader fontSize='3xl'>Next Basket Recommender </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
-                  <img src={basket} />
+                  <img src={basket} alt="basket"/>
                 </ModalBody>
                 <ModalFooter>
                   <Button className="modal_closeBtn" mr={3} onClick={onClose}>
