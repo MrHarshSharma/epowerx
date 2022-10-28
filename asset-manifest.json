@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/epowerx/static/css/main.2143b7f2.css",
-    "main.js": "/epowerx/static/js/main.49ef6705.js",
+    "main.css": "/epowerx/static/css/main.9b0322e8.css",
+    "main.js": "/epowerx/static/js/main.c233e102.js",
     "static/js/787.ec704a7a.chunk.js": "/epowerx/static/js/787.ec704a7a.chunk.js",
     "static/media/Personalised_Video.mp4": "/epowerx/static/media/Personalised_Video.1e7273ddb5ac38f475f2.mp4",
     "static/media/MaskAI.mp4": "/epowerx/static/media/MaskAI.0db167011a90fb4ee939.mp4",
@@ -30,12 +30,12 @@
     "static/media/spinny.jpg": "/epowerx/static/media/spinny.95d0430dda369fadd433.jpg",
     "static/media/seehow.png": "/epowerx/static/media/seehow.cc3015f1b48d2493dc98.png",
     "index.html": "/epowerx/index.html",
-    "main.2143b7f2.css.map": "/epowerx/static/css/main.2143b7f2.css.map",
-    "main.49ef6705.js.map": "/epowerx/static/js/main.49ef6705.js.map",
+    "main.9b0322e8.css.map": "/epowerx/static/css/main.9b0322e8.css.map",
+    "main.c233e102.js.map": "/epowerx/static/js/main.c233e102.js.map",
     "787.ec704a7a.chunk.js.map": "/epowerx/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2143b7f2.css",
-    "static/js/main.49ef6705.js"
+    "static/css/main.9b0322e8.css",
+    "static/js/main.c233e102.js"
   ]
 }
