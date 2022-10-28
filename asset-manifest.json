@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/epowerx/static/css/main.81007d46.css",
-    "main.js": "/epowerx/static/js/main.d0e352dd.js",
+    "main.css": "/epowerx/static/css/main.2143b7f2.css",
+    "main.js": "/epowerx/static/js/main.49ef6705.js",
     "static/js/787.ec704a7a.chunk.js": "/epowerx/static/js/787.ec704a7a.chunk.js",
     "static/media/Personalised_Video.mp4": "/epowerx/static/media/Personalised_Video.1e7273ddb5ac38f475f2.mp4",
     "static/media/MaskAI.mp4": "/epowerx/static/media/MaskAI.0db167011a90fb4ee939.mp4",
@@ -28,17 +28,14 @@
     "static/media/intertrust_group.png": "/epowerx/static/media/intertrust_group.face84cc352cb6115b24.png",
     "static/media/iquanti.png": "/epowerx/static/media/iquanti.b46b29590cf44f07d804.png",
     "static/media/spinny.jpg": "/epowerx/static/media/spinny.95d0430dda369fadd433.jpg",
-    "static/media/revicons.eot": "/epowerx/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/seehow.png": "/epowerx/static/media/seehow.cc3015f1b48d2493dc98.png",
-    "static/media/revicons.ttf": "/epowerx/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/epowerx/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/epowerx/index.html",
-    "main.81007d46.css.map": "/epowerx/static/css/main.81007d46.css.map",
-    "main.d0e352dd.js.map": "/epowerx/static/js/main.d0e352dd.js.map",
+    "main.2143b7f2.css.map": "/epowerx/static/css/main.2143b7f2.css.map",
+    "main.49ef6705.js.map": "/epowerx/static/js/main.49ef6705.js.map",
     "787.ec704a7a.chunk.js.map": "/epowerx/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81007d46.css",
-    "static/js/main.d0e352dd.js"
+    "static/css/main.2143b7f2.css",
+    "static/js/main.49ef6705.js"
   ]
 }
