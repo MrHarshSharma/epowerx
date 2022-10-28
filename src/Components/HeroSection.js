@@ -144,7 +144,7 @@ function HeroSection() {
                 <Heading className='CustomHeading' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
                   {card.subtitle}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} >
+                <Text fontSize={{ base: 'md', lg: 'lg' }} className="bannerText" style={{marginRight:'32px'}}>
                   {card.text}
                 </Text>
               </Stack>

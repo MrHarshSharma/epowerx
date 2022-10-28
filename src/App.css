@@ -475,6 +475,14 @@ li.roundedBtn {
   .CustomHeading {
     text-align: center !important;
   }
+
+  .bannerText{
+    text-align: center;
+  }
+
+  .caseStudyContent li{
+    text-align: center;
+  }
 }
 
 .clientLogos img {
