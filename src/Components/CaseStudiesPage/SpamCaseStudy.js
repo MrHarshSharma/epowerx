@@ -94,14 +94,9 @@ function SpamCaseStudy() {
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
-                  {/* <div className="slidernote">
-                    <Text>Slide to explore</Text> <AiOutlineArrowRight />
-                  </div> */}
                   <div className="ImagesSlider">
                     <img src={spam} alt="spam" />
                   </div>
-
-                  {/* <img src={buyer_two} /><br /> */}
                 </ModalBody>
                 <ModalFooter>
                   <Button className="modal_closeBtn" mr={3} onClick={onClose}>

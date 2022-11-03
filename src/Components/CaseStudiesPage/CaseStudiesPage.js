@@ -52,9 +52,7 @@ function CaseStudiesPage() {
                 <div class="carousel-item col-md-4">
                   <SeoCaseStudy />
                 </div>
-                {/* <div class="carousel-item col-md-4">
-                  <TruckCaseStudy />
-                </div> */}
+              
               </div>
               <a
                 class="carousel-control-prev"

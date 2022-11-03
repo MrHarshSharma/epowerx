@@ -28,7 +28,6 @@ function BasketCaseStudy() {
         <Box
           maxW={"330px"}
           w={"full"}
-          // bg={useColorModeValue("white", "gray.800")}
           className='gradientBG'
           boxShadow={"base"}
           rounded={"md"}
@@ -62,7 +61,7 @@ function BasketCaseStudy() {
           </Stack>
 
           <Box
-            // bg={useColorModeValue("gray.200", "gray.900")}
+      
             style={{color:'white'}}
             px={6}
             py={10}

@@ -11,7 +11,6 @@ function HomePage() {
   return (
     <>
         <HeroSection />
-        {/* <FeaturesSection /> */}
         <TestimonialPage />
         <ServicesSection />
         <CaseStudiesPage />

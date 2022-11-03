@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Box,
-
   Text,
   Button,
   Stack,
@@ -14,7 +13,10 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Center, List, ListItem, ListIcon 
+  Center,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 
 import { CheckIcon } from "@chakra-ui/icons";
@@ -29,7 +31,7 @@ function TruckCaseStudy() {
         <Box
           maxW={"330px"}
           w={"full"}
-         className='gradientBG'
+          className="gradientBG"
           boxShadow={"base"}
           rounded={"md"}
           overflow={"hidden"}
@@ -44,7 +46,7 @@ function TruckCaseStudy() {
             <Text
               fontSize={"md"}
               fontWeight={500}
-             className='light_bg'
+              className="light_bg"
               p={2}
               px={3}
               color={"#fff"}
@@ -53,18 +55,23 @@ function TruckCaseStudy() {
               Service
             </Text>
             <Stack direction={"row"} align={"center"} justify={"center"}>
-              <Text fontSize={"xl"} fontWeight={200}  className='caseHeading'>
-              Predicting unproductive Truck trips
+              <Text fontSize={"xl"} fontWeight={200} className="caseHeading">
+                Predicting unproductive Truck trips
               </Text>
             </Stack>
           </Stack>
 
-          <Box style={{color:'white'}} px={6} py={10} className='caseStudyContent'>
+          <Box
+            style={{ color: "white" }}
+            px={6}
+            py={10}
+            className="caseStudyContent"
+          >
             <List spacing={3}>
               <ListItem>
                 <ListIcon as={CheckIcon} color="white.400" />
                 Daily reconciliation of transactions between fund and broker.
-              Caters to huge volume and long tail problem using ML.
+                Caters to huge volume and long tail problem using ML.
               </ListItem>
             </List>
 
@@ -74,29 +81,22 @@ function TruckCaseStudy() {
               mt={10}
               w={"full"}
               color={"black"}
-             
               boxShadow={"0 5px 20px 0px rgb(217 203 34 / 43%)"}
             >
               Read More
             </Button>
 
-            <Modal onClose={onClose} isOpen={isOpen} size={"full"} >
+            <Modal onClose={onClose} isOpen={isOpen} size={"full"}>
               <ModalOverlay />
               <ModalContent className="gradientBG">
-                <ModalHeader fontSize='3xl'>
-                
-              Predicting unproductive Truck trips
+                <ModalHeader fontSize="3xl">
+                  Predicting unproductive Truck trips
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody className="ModalBody">
-                  {/* <div className="slidernote">
-                    <Text>Slide to explore</Text> <AiOutlineArrowRight />
-                  </div> */}
                   <div className="ImagesSlider">
-                  <img src={truck} alt="truck"/>
+                    <img src={truck} alt="truck" />
                   </div>
-
-                  {/* <img src={buyer_two} /><br /> */}
                 </ModalBody>
                 <ModalFooter>
                   <Button className="modal_closeBtn" mr={3} onClick={onClose}>

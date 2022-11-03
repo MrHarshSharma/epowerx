@@ -15,16 +15,14 @@ function SinglePeople({ member }) {
     <Box
       maxW={"620px"}
       w={"full"}
-      className='gradientBG'
+      className="gradientBG"
       rounded={"lg"}
       p={6}
       textAlign={"center"}
       style={{ boxShadow: "0 25px 50px -12px rgb(0 0 0 / 46%)" }}
-      
     >
       <Avatar
         size={"xl"}
-        
         src={`TeamImages/${member.imagename}.jpeg`}
         alt={"Avatar Alt"}
         mb={4}
@@ -55,20 +53,13 @@ function SinglePeople({ member }) {
         target="_blank"
       >
         <span className="LinkedIncontainer">
-
-        <Text fontWeight={600} style={{color:'white'}} mb={4}>
-          <AiFillLinkedin />
-          {member.linkedin}
-        </Text>
+          <Text fontWeight={600} style={{ color: "white" }} mb={4}>
+            <AiFillLinkedin />
+            {member.linkedin}
+          </Text>
         </span>
       </a>
-      <Text
-        textAlign={"center"}
-        color='white'
-        px={1}
-        py={2}
-        mb={2}
-      >
+      <Text textAlign={"center"} color="white" px={1} py={2} mb={2}>
         {member.description}
       </Text>
 
@@ -80,15 +71,10 @@ function SinglePeople({ member }) {
           style={{ textDecoration: "none" }}
           rounded={"full"}
         >
-          <Button
-            bg="#d2d2d2"
-           
-            className='btn_secondary'
-          >
+          <Button bg="#d2d2d2" className="btn_secondary">
             Email
           </Button>
         </Link>
-        
       </Stack>
     </Box>
   );

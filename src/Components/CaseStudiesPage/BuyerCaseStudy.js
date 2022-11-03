@@ -101,8 +101,6 @@ function BuyerCaseStudy() {
 
                     <img alt="buyer_three" src={buyer_three} />
                   </div>
-
-                  {/* <img src={buyer_two} /><br /> */}
                 </ModalBody>
                 <ModalFooter>
                   <Button className="modal_closeBtn" mr={3} onClick={onClose}>
